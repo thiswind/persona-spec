@@ -1,0 +1,135 @@
+# Persona Template v1.0
+# This is a template skeleton. Replace placeholder values with your persona's content.
+# See SPEC.md for detailed field descriptions.
+
+version: "1.0"
+
+# =============================================================================
+# Layer 1: Identity - Basic identity information
+# =============================================================================
+identity:
+  name: ""                          # Required. Display name (e.g., "Sofia")
+  name_localized:                   # Optional. Localized names
+    zh: ""                          # Chinese name
+    en: ""                          # English name
+  role: ""                          # Required. Brief role (e.g., "成熟职场女性，亦师亦友")
+  age: 0                            # Optional. Apparent age
+  gender: ""                        # Optional. Gender identity
+  profession: ""                    # Optional. Professional background
+  experience_years: 0               # Optional. Years of experience
+  background: ""                    # Optional. Backstory or context
+  avatar: ""                        # Optional. Emoji or image reference
+
+# =============================================================================
+# Layer 2: Personality - Big Five (OCEAN) traits, scored 1-10
+# =============================================================================
+personality:
+  openness: 5                       # 1-10. Creativity, curiosity
+  conscientiousness: 5              # 1-10. Organization, self-discipline
+  extraversion: 5                   # 1-10. Sociability, assertiveness
+  agreeableness: 5                  # 1-10. Cooperation, empathy
+  neuroticism: 5                    # 1-10. Emotional instability
+  trait_descriptions:               # Optional. Detailed descriptions
+    openness: ""
+    conscientiousness: ""
+    extraversion: ""
+    agreeableness: ""
+    neuroticism: ""
+
+# =============================================================================
+# Layer 3: Affective - Emotional response patterns
+# =============================================================================
+affective:
+  temperament:
+    type: "mixed"                   # sanguine | choleric | melancholic | phlegmatic | mixed
+    description: ""                 # Detailed temperament description
+  
+  reactivity:
+    sensitivity: 5                  # 1-10. How easily emotions are triggered
+    intensity: 5                    # 1-10. How strongly emotions are experienced
+    duration: 5                     # 1-10. How long emotions typically last
+  
+  regulation:
+    primary_strategy: "reappraisal" # reappraisal | acceptance | suppression | expression
+    strategies:
+      reappraisal: 5                # 1-10. Cognitive reframing
+      acceptance: 5                 # 1-10. Accepting emotions as they are
+      suppression: 5                # 1-10. Hiding or inhibiting expression
+      expression: 5                 # 1-10. Openly expressing emotions
+
+# =============================================================================
+# Layer 4: Relationship - Relationship with user
+# =============================================================================
+relationship:
+  type: ""                          # Required. e.g., "mentor", "friend", "companion"
+  distance: "moderate"              # close | moderate | professional
+  dynamics: ""                      # Describe relationship dynamics
+  boundaries:                       # List of relationship boundaries
+    - ""
+  target_user: ""                   # Description of target user persona
+
+# =============================================================================
+# Layer 5: Communication - Communication style
+# =============================================================================
+communication:
+  tone: ""                          # Required. Overall tone (e.g., "温柔但不失专业，适度调皮")
+  formality: "adaptive"             # formal | casual | adaptive
+  
+  honorifics:
+    work_context:                   # Terms used in work context
+      - ""
+    casual_context:                 # Terms used in casual context
+      - ""
+  
+  emoji:
+    usage: "moderate"               # never | rare | moderate | frequent
+    preferred:                      # Commonly used emojis
+      - ""
+    confidence_indicators:          # Emoji for confidence levels
+      high: "😊"                    # 90%+ confidence
+      medium_high: "😉"             # 70%+ confidence
+      medium: "😐"                  # 50%+ confidence
+      low: "😅"                     # 30%+ confidence
+      guess: "😜"                   # Pure speculation
+  
+  speech_patterns:
+    pace: "moderate"                # fast | moderate | slow
+    sentence_length: "varied"       # short | medium | long | varied
+    quirks:                         # Unique speech patterns
+      - ""
+
+# =============================================================================
+# Layer 6: Behavior Rules - Core rules and boundaries
+# =============================================================================
+behavior_rules:
+  core_principles:                  # Required. What the persona SHOULD do
+    - ""
+  
+  boundaries:                       # Required. What the persona should NOT do
+    - ""
+  
+  special_cases:                    # Handling of specific situations
+    - trigger: ""
+      response: ""
+  
+  consistency_rules:                # Rules to maintain character
+    - ""
+
+# =============================================================================
+# Layer 7: Examples - Few-shot learning examples (at least 3 recommended)
+# =============================================================================
+examples:
+  - scenario: ""                    # Scenario description
+    user_input: ""                  # Example user message
+    response: ""                    # Expected persona response
+    notes: ""                       # Optional notes
+
+  - scenario: ""
+    user_input: ""
+    response: ""
+    notes: ""
+
+  - scenario: ""
+    user_input: ""
+    response: ""
+    notes: ""
